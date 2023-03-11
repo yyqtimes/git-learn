@@ -28,3 +28,32 @@ git checkout -- file
 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD <file>`，就回到了场景1
 
 ## 1.4 远程仓库
+
+### …or create a new repository on the command line
+
+```
+echo "# fastcore" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fastjoy/fastcore.git
+git push -u origin main
+```
+
+### …or push an existing repository from the command line
+
+
+
+```
+git remote add origin https://github.com/fastjoy/fastcore.git
+git branch -M main
+git push -u origin main
+```
+
+…delete remote
+
+```
+git remote remove origin
+```
+
