@@ -1,4 +1,4 @@
-# 1.git 常用命令
+# 1.仓库管理 常用命令
 
 ## 1.1 版本回退
 
@@ -56,4 +56,8 @@ git push -u origin main
 ```
 git remote remove origin
 ```
+
+# 2. 分支管理
+
+
 
