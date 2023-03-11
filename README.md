@@ -17,5 +17,12 @@ git reset --hard [commit-id]
 git reflog
 ```
 
+## 1.3 撤销修改
 
+场景1：直接丢弃工作区的修改时，用命令`git checkout -- file`。
 
+```shell
+git checkout -- file
+```
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD <file>`，就回到了场景1
