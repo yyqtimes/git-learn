@@ -59,5 +59,15 @@ git remote remove origin
 
 # 2. 分支管理
 
+首先，我们创建`dev`分支，然后切换到`dev`分支：
 
+```
+$ git checkout -b dev
+```
 
+`git checkout`命令加上`-b`参数表示创建并切换，相当于以下两条命令：
+
+```
+$ git branch dev
+$ git checkout dev
+```
