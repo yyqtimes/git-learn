@@ -86,8 +86,11 @@ $ git merge dev
 
 ## 2.3 删除分支
 
-```
+```shell
 $ git branch -d dev
+
+# 同步删除远程分支
+$ git push origin --delete dev   
 ```
 
 ## 2.4 总结
