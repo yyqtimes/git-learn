@@ -13,3 +13,9 @@ git reset --hard [commit-id]
 
 ## 1.2 查看操作历史
 
+```
+git reflog
+```
+
+
+
