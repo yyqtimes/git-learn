@@ -59,6 +59,8 @@ git remote remove origin
 
 # 2. 分支管理
 
+## 2.1 创建和切换分支
+
 首先，我们创建`dev`分支，然后切换到`dev`分支：
 
 ```
@@ -71,3 +73,35 @@ $ git checkout -b dev
 $ git branch dev
 $ git checkout dev
 ```
+
+## 2.2 分支合并
+
+`dev`分支的工作成果合并到`master`分支上
+
+```
+$ git merge dev
+```
+
+`git merge`命令用于合并指定分支到当前分支。
+
+## 2.3 删除分支
+
+```
+$ git branch -d dev
+```
+
+## 2.4 总结
+
+Git鼓励大量使用分支：
+
+查看分支：`git branch`
+
+创建分支：`git branch <name>`
+
+切换分支：`git checkout <name>`或者`git switch <name>`
+
+创建+切换分支：`git checkout -b <name>`或者`git switch -c <name>`
+
+合并某分支到当前分支：`git merge <name>`
+
+删除分支：`git branch -d <name>`
